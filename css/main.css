@@ -1,0 +1,716 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+
+/*******
+Styling Heading with Font Source Sans
+*******/
+h1,h2,h3,h4 {
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+
+/*******
+Start Home Section Style 
+********/
+.home {
+    background-color: red;
+    background-image: linear-gradient(to bottom, rgb(0 0 0 / 72%), rgb(15 14 14 / 68%)),
+     url(../image/header.jpeg);
+     height: 100vh;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+}
+.home .navbar {
+    padding-top: 10px;
+}
+.home .navbar .left{
+   float: left;
+   color: #FF305B;
+   font-size: 25px;
+   margin: 10px;
+}
+.home .navbar .right {
+    float: right;
+}
+.home .navbar .right ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.home .navbar .right ul li {
+    display: inline-block;
+    margin: 10px;
+}
+.home .navbar .right ul li a {
+    text-decoration: none;
+    color: white;
+    transition: .6s;
+}
+.home .navbar .right ul li .dashed {
+    color: #FF305B;
+}
+.home .navbar .right ul li:hover a {
+    color: #FF305B;
+}
+.home .navbar .clear {
+    clear: both;
+}
+.home .home-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.home .home-content span {
+    font-size: 24px;
+}
+.home .home-content h1 {
+    font-size: 70px;
+    text-transform: uppercase;
+    color: #FF305B;
+    margin: 10px 0;
+}
+.home .home-content p {
+    font-size: 26px;
+}
+
+
+/*******
+Start Hello Section Style 
+********/
+.hello {
+    padding: 200px 0;
+}
+.hello .hello-img {
+    float: left;
+    width: 30%;
+    border: 6px solid black;
+    border-radius: 10px;
+}
+.hello .hello-img .photo {
+    position: relative;
+    transform: translate(50px, 50px);
+    overflow: hidden;
+    
+}
+.hello .hello-img .photo img {
+    width: 100%;
+    border-radius: 10px;
+}
+.hello .hello-img .layer-icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    background-color: black;
+    opacity: .5;
+    color: white;
+    transition: .7s;
+}
+.hello .hello-img .layer-icon .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+}
+.hello .hello-img .layer-icon .icon i {
+    padding-left: 5px;
+}
+
+.hello .hello-img .photo:hover .layer-icon{
+    top: 0;
+}
+.hello .hello-img .photo .layer-icon .icon i:hover {
+    color: #FF305B;
+}
+
+.hello .hello-content {
+    float: left;
+    width: 50%;
+    margin-left: 150px;
+}
+.hello .hello-content .first-content {
+    border-bottom: 2px dotted #555555;
+}
+.hello .hello-content .first-content h2 {
+    font-size: 34px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+.hello .hello-content .first-content h2::first-letter {
+    color: #FF305B;
+}
+.hello .hello-content .first-content p {
+    font-size: 24px;
+    line-height: 1.3;
+    color:#555555;
+}
+.hello .hello-content .second-content {
+    margin-top: 30px;
+    font-size: 20px;
+}
+.hello .hello-content .second-content .first {
+    float: left;
+    width: 35%;
+}
+.hello .hello-content .second-content .second {
+    float: left;
+    width: 35%;
+}
+.hello .hello-content .second-content .first div,
+.hello .hello-content .second-content .second div {
+    margin-top: 10px;
+    color: #555555;
+}
+.hello .hello-content .second-content .first div .light,
+.hello .hello-content .second-content .second div .light {
+    color: black;
+}
+.hello .hello-content .second-content .clear {
+    clear: both;
+}
+.hello .hello-content .third-content {
+    margin-top: 50px;
+    font-size: 23px;
+    color: white;
+}
+.hello .hello-content .third-content .third-first {
+    float: left;
+    width: 200px;
+    background-color: #FF305B;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.hello .hello-content .third-content .third-second {
+    float: left;
+    width: 200px;
+    margin-left: 20px;
+    background-color: #FF305B;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.hello .hello-content .third-content .third-first a,
+.hello .hello-content .third-content .third-second a {
+    text-decoration: none;
+    color: white;
+    
+}
+.hello .hello-content .third-content .third-first:hover,
+.hello .hello-content .third-content .third-second:hover {
+    background-color: #db395b;
+    transition: .9s;
+}
+
+.hello .hello-content .third-content .clear {
+    clear: both;
+}
+.hello .clear {
+    clear: both;
+}
+
+
+/*******
+Start Service Section Style 
+********/
+.service {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+.service h2 {
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+.service h2::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #FF305B;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+}
+.service h2::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background-color: #FF305B;
+    left: 50%;
+    top: 115%;
+    transform: translateX(-50%);
+}
+.service span {
+    width: 100px;
+    height: 1px;
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: #FF305B;
+    margin-top: -23px;
+}
+.service .service-content {
+    margin-top: 100px;
+}
+.service .service-content .card-content {
+    float: left;
+    width: 23%;
+    text-align: center;
+    padding: 40px 7px;
+    border-radius: 10px;
+}
+.service .service-content div i {
+    color: #FF305B;
+}
+.service .service-content div i,
+.service .service-content div h3 {
+    font-size: 30px;
+}
+.service .service-content div h3 {
+    margin: 26px 0;
+}
+.service .service-content div p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+.service .service-content .card-content:hover {
+    background-color: white;
+    transition: .8s;
+}
+.service .service-content .card-content:hover i {
+    transform: scale(1.5);
+    transition: .8s;
+}
+.service .service-content .clear {
+    clear: both;
+}
+
+/*******
+Start Portfolio Section Style 
+********/
+.portfolio {
+    padding: 100px 0;
+    text-align: center;
+}
+.portfolio h2 {
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+.portfolio h2::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #FF305B;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+}
+.portfolio h2::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background-color: #FF305B;
+    left: 50%;
+    top: 115%;
+    transform: translateX(-50%);
+}
+.portfolio span {
+    width: 100px;
+    height: 1px;
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: #FF305B;
+    margin-top: -23px;
+}
+.portfolio ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.portfolio ul li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #555555;
+}
+.portfolio ul li:first-child {
+    color: #FF305B;
+}
+.portfolio .galary {
+    margin-top: 50px;
+}
+
+.portfolio .galary .item {
+    float: left;
+    width: 30%;
+    margin: 20px;
+    position: relative;
+}
+.portfolio .galary .item img {
+    width: 100%;
+}
+.portfolio .galary .item .layer {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: 0.5s;
+}
+.portfolio .galary .item .layer i {
+    color: red;
+    font-size: 30px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.portfolio .galary .item:hover .layer {
+    opacity: 0.3;
+}
+.portfolio .galary .clear {
+    clear: both;
+}
+
+
+/*******
+Start Our Num Section Style 
+********/
+.number {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #f1f1f1;
+    font-size: 30px;
+    color: #555555;
+}
+.number .num-content .num-item {
+    float: left;
+    width: 25%;
+}
+.number .num-content .num-item i {
+    color: #FF305B;
+}
+.number .num-content .num-item p {
+    color: black;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.number .num-content .clear {
+    clear: both;
+}
+
+
+/*******
+Start Our Feedback Section Style 
+********/
+
+.feedback {
+    padding: 100px 0;
+    position: relative;
+}
+.feedback h2 {
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    margin-top: 0;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.feedback h2::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #FF305B;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+}
+.feedback h2::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background-color: #FF305B;
+    left: 50%;
+    top: 115%;
+    transform: translateX(-50%);
+}
+.feedback .line {
+    width: 100px;
+    height: 1px;
+    position: absolute;
+    background-color: #FF305B;
+    margin-top: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.feedback .feedback-item {
+    background-color: #f1f1f1;
+    width: 70%;
+    margin: auto;
+    background: linear-gradient(138deg, #FF305B 18%, #FF305B, transparent 1%, transparent 34px);
+    background-color: #f1f1f1;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.feedback .feedback-item .img-item {
+    float: left;
+    width: 20%;
+    border-radius: 50%;
+}
+
+.feedback .feedback-item .img-item img {
+    width: 100%;
+    border-radius: 50%;
+}
+.feedback .feedback-item .content-item {
+    float: left;
+    width: 65%;
+    margin-left: 10px;
+}
+.feedback .feedback-item .content-item h3 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.feedback .feedback-item .content-item span {
+    color: #555555;
+}
+.feedback .feedback-item .content-item p {
+    color: #555555;
+    line-height: 1.6;
+}
+.feedback .feedback-item .content-item div i {
+    color: yellow;
+}
+.feedback .feedback-item .clear {
+    clear: both;
+}
+.feedback .shape {
+    text-align: center;
+}
+.feedback .shape .first-shape {
+    width: 25px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: #FF305B;
+    margin-right: 5px;
+    display: inline-block;
+}
+.feedback .shape .second-shape {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #FF305B;
+    display: inline-block;
+}
+
+
+
+/*******
+Start Service Section Style 
+********/
+.blog {
+    padding-top: 100px;
+    padding-bottom: 150px;
+    background-color: #f1f1f1;
+}
+.blog h2 {
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    margin-top: 0;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.blog h2::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #FF305B;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+}
+.blog h2::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background-color: #FF305B;
+    left: 50%;
+    top: 115%;
+    transform: translateX(-50%);
+}
+.blog .line {
+    width: 100px;
+    height: 1px;
+    position: absolute;
+    background-color: #FF305B;
+    margin-top: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.blog .blog-content .blog-card {
+    float: left;
+    width: 30%;
+    margin-left: 20px;
+    background-color: white;
+}
+.blog .blog-card .card-img img {
+    width: 100%;
+}
+.blog .blog-content .card-content {
+    padding: 15px;
+    color: #555555;
+}
+.blog .blog-content .card-content h3 {
+    color: black;
+    font-size: 34;
+}
+.blog .blog-content .card-content span:hover {
+    color: #FF305B;
+    transition: .6s;
+    cursor: pointer;
+}
+.blog .blog-content .clear {
+    clear: both;
+}
+
+/*******
+Start Contact Section Style 
+********/
+.contact {
+    padding-top: 100px;
+}
+.contact h2 {
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    margin-top: 0;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.contact h2::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background-color: #FF305B;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+}
+.contact h2::after {
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 2px;
+    background-color: #FF305B;
+    left: 50%;
+    top: 115%;
+    transform: translateX(-50%);
+}
+.contact .line {
+    width: 100px;
+    height: 1px;
+    position: absolute;
+    background-color: #FF305B;
+    margin-top: -23px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.contact .contact-form{
+    width: 70%;
+    margin: 100px auto;
+}
+.contact form .first input{
+    width: 45%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #555555;
+    outline: none;
+}
+.contact form .first input:last-child {
+    margin-left: 10px;
+}
+.contact form .second {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contact form .second input {
+    width: 95%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #555555;
+    outline: none;
+}
+.contact form .third textarea {
+    width: 98%;
+    border-radius: 5px;
+    border: 1px solid #555555;
+    outline: none;
+}
+.contact form button {
+    border: none;
+    padding: 15px 25px;
+    color: white;
+    background-color: #FF305B;
+    border-radius: 7px;
+    margin-top: 10px;
+}
+
+
+/*******
+Start Footer Section Style 
+********/
+.footer {
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+    background-color: #555555;
+}
+.footer .icon i {
+    margin-left: 20px;
+    font-size: 20px;
+}
+.footer .icon i:hover {
+    color: #FF305B;
+    transition: .6s;
+}
+.footer span {
+    color: #FF305B;
+}
